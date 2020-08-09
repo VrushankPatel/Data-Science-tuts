@@ -1,0 +1,18 @@
+pip3 install pipenv // install pipenv
+
+// go into the project folder
+
+pipenv shell // to initiate virtual environment
+pipenv install flask flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy   // install these things, if not using virtual env, then use pip or pip3
+
+// once you create the db classes, to migrate the model classes to table or database,
+// open the terminal in the project folder,
+// type python3 and press enter so, it'll open python shell and then type following commands
+// here, out file's name is app.py which contain db model classes
+// db is sqlalchemy object of flask app, check app.py file to understand that
+
+>> from app import db  // imported the db obejct which is of sqlalchemy
+ 
+>> db.create_all()     // to write all the db configuration from classes to database, in django, we use migrations
+
+// use POSTMAN tool for requests.

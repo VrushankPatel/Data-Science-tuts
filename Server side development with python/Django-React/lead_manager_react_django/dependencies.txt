@@ -1,0 +1,5 @@
+pip3 install django   // Django framework
+python3 -m pip install djangorestframework    // for REST
+pip3 install django-rest-knox  // for tocken authentication
+
+// install the POSTMAN tool for api testing
